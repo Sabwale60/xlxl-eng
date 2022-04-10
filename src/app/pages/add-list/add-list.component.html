@@ -1,0 +1,81 @@
+<div class="reg-banner-area">
+  <div class="container">
+      <div class="banner-content">
+          <h2>Add new listing  </h2>
+      </div>
+  </div>
+</div>
+
+<div class="singup-form">
+  <form >
+
+
+    <div class="form-details-left">
+
+      <div class="login-field">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Listing title</mat-label>
+          <input required digitOnly type="text" formControlName="listingTitle" matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Email</mat-label>
+          <input required type="email" formControlName="email" matInput>
+          <mat-icon matSuffix>mail</mat-icon>
+          <mat-error>Please enter your valid email</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="first-name">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Username</mat-label>
+          <input type="text" formControlName="username" matInput>
+          <mat-icon matSuffix>person</mat-icon>
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="last-name">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Street</mat-label>
+          <input type="text" formControlName="street" matInput >
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>city</mat-label>
+          <input type="text" formControlName="city" matInput >
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Description</mat-label>
+          <input type="text" formControlName="description" matInput >
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>price</mat-label>
+          <input type="number" formControlName="price" matInput >
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="pass-details">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Postal code</mat-label>
+          <input type="number" formControlName="postal_code" matInput >
+          <mat-error>This field is required</mat-error>
+        </mat-form-field>
+      </div>
+
+
+    </div>
+
+    <div class="form-details-right">
+
+      <!---sub-btn-->
+      <div class="sub-btn">
+        <button style="cursor: pointer;" type="submit" routerLink="/">Add</button>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>

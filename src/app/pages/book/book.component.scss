@@ -1,0 +1,145 @@
+@import'src/theme/variables';
+.reg-banner-area{
+    background-image: url('../../../assets/images/image/banner.png');
+    padding: 0px;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 0px;
+    box-sizing: border-box;
+    position: relative;
+    min-height:40vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+.reg-banner-area::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(0 0 0 / 15%);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.banner-content{
+    display: block;
+    text-align: center;
+    border: 1px solid #fbf8f8;
+    border-radius: 12px;
+    padding: 20px 15px;
+}
+.banner-content h2{
+    color: #fff;
+    font-family:$font-en-primary;
+    font-weight: 500;
+    font-size: 34px;
+    display: block;
+    line-height: 40px;
+    margin-bottom: 10px!important;
+}
+.banner-content p{
+    color: #eceae5;
+    font-family: $font-en-primary;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 27px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto!important;
+
+}
+.banner-content p a{
+    display: inline-block;
+    color: #fff;
+}
+.banner-content p a i{
+    font-size: 13px;
+}
+@media(max-width:450px){
+    .banner-content p{
+
+        font-size: 17px;
+        line-height: 25px;
+
+    }
+    .banner-content h2{
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 5px!important;
+
+    }
+    .reg-banner-area{
+        padding: 80px 0px;
+        min-height: 40vh;
+    }
+}
+
+
+.singup-form {
+  // width: 300px;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  max-width: 620px;
+  padding: 40px 30px 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  ::ng-deep .mat-form-field {
+    width: 100%;
+}
+  ::ng-deep mat-radio-group.mat-radio-group.example-radio-group {
+    /* width: 100%; */
+    display: grid;
+    gap: 10px;
+    padding-top: 10px;
+  }
+}
+.sub-btn{
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.sub-btn button{
+  background-color: #1a73e8;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #1a73e8;
+  max-width: 300px;
+  width: 100%;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  transition: all 0.3s linear;
+}
+.sub-btn button:hover{
+  color: #1a73e8;
+  background-color: #fff;
+}
+.sign-in-form-main{
+  display: block;
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  max-width: 620px;
+  padding: 40px 30px 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}

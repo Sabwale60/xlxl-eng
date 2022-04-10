@@ -1,0 +1,202 @@
+@import'src/theme/variables';
+
+::ng-deep mat-form-field{
+  width: 100%;
+}
+.banner-area{
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  height: 300px;
+  background-image: url('../../../assets/images/image/banner.png');
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-main{
+  display: block;
+  width: 100%;
+}
+.banner-content{
+  max-width: 250px;
+  width: 100%;
+  border: 1px solid #fbf8f8;
+  border-radius: 12px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.banner-content h3{
+  color: #fff;
+  font-family: $font-en-primary;
+  font-style: normal;
+  display: block;
+  margin: 0px;
+  font-size: 43px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.banner-content h4{
+  margin: 0px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: normal;
+  display: block;
+  text-transform: uppercase;
+
+}
+@media(max-width:560px){
+  .banner-area{
+      height: 280px;
+  }
+}
+/**** sign-in-form-area ****/
+.sign-in-form-area{
+  display: block;
+  width: 100%;
+  margin: 40px 0px;
+}
+.sign-in-form-main{
+  display: block;
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  max-width: 620px;
+  padding: 40px 30px 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+@media(max-width:500px){
+  .sign-in-form-main{
+      padding: 30px 20px 20px 20px;
+  }
+}
+.form-logo{
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form-logo h3{
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-size: 40px;
+  display: block;
+  text-transform: uppercase;
+  color: #2a2828;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.form-title{
+  display: block;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.form-title h4{
+  color: #3d3d3d;
+  font-family: $font-en-primary;
+  font-weight: 500;
+  font-size: 20px;
+}
+.form-input{
+  display: block;
+}
+.form-input mat-form-field{
+  display: block;
+  width: 100%;
+}
+
+.form-input form mat-form-field input{
+  color: #3b3535;
+  font-family: $font-en-primary;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14.5px;
+}
+.form-input h3{
+  color: #3b3535;
+  font-family:$font-en-primary;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px!important;
+}
+.form-input mat-label{
+  font-family:$font-en-primary;
+  font-weight: 500;
+  font-size: 16px;
+}
+.forgot{
+  display: block;
+}
+.forgot ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.forgot ul li{
+  display: block;
+  margin-bottom: 12px;
+  color: #3b3535;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.forgot ul li a{
+  color: #1a73e8;
+  display: inline-block;
+}
+.sub-btn{
+  display: block;
+  margin-top: 50px;
+}
+.sub-btn button{
+  background-color: #1a73e8;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #1a73e8;
+  max-width: 300px;
+  width: 100%;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  transition: all 0.3s linear;
+}
+.sub-btn button:hover{
+  color: #1a73e8;
+  background-color: #fff;
+}
+.form-input mat-icon{
+  color: #484747;
+}
+::placeholder{
+  color: #3b3535;
+  font-family: $font-en-primary;
+}
+::ng-deep.form-input .mat-form-field-appearance-outline .mat-form-field-outline-thick{
+  color: #1a73e8;
+}
+::ng-deep.form-input .mat-form-field.mat-focused .mat-form-field-label{
+  color: #1a73e8!important;
+}
+::ng-deep.verify-with .mat-radio-label{
+  white-space: pre-wrap;
+}

@@ -1,0 +1,35 @@
+<!---header-area-->
+<div class="header-area">
+  <div class="container">
+      <div class="header-main">
+          <div class="logo">
+              <a routerLink='/' >Home</a>
+              <a routerLink='/add-list'>Add List</a>
+
+          </div>
+
+
+          <!---user--->
+          <div class="header-right">
+
+            <div class="header_search">
+              <mat-form-field appearance="outline">
+                <mat-label>search</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+
+            <div style="cursor: pointer;" class="user" >
+              <!-- [routerLink]="['/account']" -->
+              <span [matMenuTriggerFor]="menu"><i class="fa fa-circle-user"></i></span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<mat-menu #menu="matMenu" class="menu">
+<button mat-menu-item routerLink='/login'><i class="fa-solid fa-arrow-right-to-bracket"></i>Sign in</button>
+<button mat-menu-item routerLink='/registration'><i class="fa fa-user"></i> Sign Up</button>
+</mat-menu>

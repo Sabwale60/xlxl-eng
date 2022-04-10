@@ -1,0 +1,50 @@
+<div  class="banner-area">
+  <div class="container">
+      <div class="banner-main">
+          <div class="banner-content">
+              <h3>Sign In</h3>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--sign-in-form-area-->
+<div class="sign-in-form-area">
+  <div class="container">
+      <div class="sign-in-form-main">
+          <form [formGroup]="dataForm" (ngSubmit)="onSubmitForm()">
+              <div class="input-field-area">
+                  <!---form-input-->
+                  <div class="login-email">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>Username</mat-label>
+                      <input formControlName="username" matInput >
+                      <mat-error class="invalid" *ngIf="username.touched && username.invalid">This field is required</mat-error>
+                    </mat-form-field>
+
+                  </div>
+                  <div class="login-pass">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Enter your password</mat-label>
+                      <input formControlName="password" matInput [type]="hide ? 'password' : 'text'" [minlength]="6">
+                      <mat-error class="invalid" *ngIf="password.touched && password.invalid">This field is required</mat-error>
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
+                    </mat-form-field>
+                  </div>
+              </div><!---input-area-end-->
+              <div class="forgot">
+                  <ul>
+                      <li>Don't have an account? <a style="cursor: pointer;" routerLink="/registration">Create one now.</a></li>
+                  </ul>
+              </div>
+              <!---sub-btn-->
+              <div class="sub-btn">
+                  <button  type="submit" style="cursor: pointer;" type="submit" >Sign In</button>
+              </div>
+
+          </form>
+      </div>
+  </div>
+</div>
